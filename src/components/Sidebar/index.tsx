@@ -9,7 +9,7 @@ const Sidebar: React.FC = () => {
           <div className="text-xs text-[#494949] px-2 py-[2px]">{key}</div>
           <div className="flex flex-col gap-[2px] mt-[2px]">
             {value.map(({ title, href, icon }) => (
-              <Link href={href}>
+              <Link href={href} key={title}>
                 <div className="flex px-2 py-1 gap-1 hover:bg-[#E4E4E7] rounded-[4px]">
                   <Image
                     priority
